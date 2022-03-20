@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title -->
+			<title>OkiDoki</title>
+
+		<!-- Meta -->
+			<meta charset="UTF-8">
+			<meta http-equiv="Content-Language" content="pl">
+			<meta name="author" content="Wiktor Sztajgli">
+			<meta name="copyright" content="(c)2017 Wiktor Sztajgli">
+			<meta http-equiv="Reply-to" content="wiksztaj@gmail.com">
+
+			<meta name="viewport" id="viewport" content="initial-scale=1.0">
+
+		<!-- Favicons -->
+			<link href="img/logo.ico" type="image/x-icon" rel="icon"/>
+			<link href="img/logo.ico" type="image/x-icon" rel="shortcut icon"/>
+
+		<!-- Font -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Kalam:400,700&amp;subset=latin-ext" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+		<!-- jQuery -->
+			<script src="plugins/jquery2.js"></script>
+
+		<!-- Bootstrap -->
+			<link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap.min.css">
+			<link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap-theme.min.css">
+			<script src="plugins/bootstrap3/js/bootstrap.min.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<!-- owl carousel -->
+			<link rel="stylesheet" href="plugins/owlcarousel/dist/assets/owl.carousel.min.css">
+			<link rel="stylesheet" href="plugins/owlcarousel/dist/assets/owl.theme.default.min.css">
+			<script src="plugins/owlcarousel/dist/owl.carousel.min.js"></script>
+
+		<!-- font-awesome -->
+			<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+
+		<!-- My css -->
+			<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+		<!-- My Scripts -->
+			<script type="text/javascript" src="js/main.js"></script>
+
+
+
+	</head>
+
+	<body>
+
+		<!-- scroll up button -->
+			<a class="scroll_up_btn hidden-xs hidden-sm anim" style="display:none"><i class="fa fa-arrow-circle-o-up"></i></a>
+
+
+			<!-- menu start -->
+
+			<!-- start media bar -->
+			<div class="container-fluid" style="overflow:hidden;">
+				<div class="media_bar anim white" style="line-height:45px;">
+
+					<!-- start media buttons -->
+					<div class="col-md-3 bs-change col-sm-3 col-sm-offset-2 col-md-offset-2 col-xs-1" style="font-size:20px;">
+						<a href="https://www.facebook.com/okidokitychy/" target="_blank" class="white media_hover m-r-10" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="anim3 fa fa-facebook"></i></a>
+						<a href="https://www.facebook.com/okidokitychy/" target="_blank" class="hidden-xs white media_hover" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="anim3 fa fa-instagram"></i></a>
+					</div>
+					<!-- end media buttons -->
+
+
+					<div class="col-md-4 col-sm-4 col-sm-offset-3 col-md-offset-3 col-xs-11">
+						<a href="mailto:pwjrss@gmail.com" target="_blank"><i class="fa fa-envelope-o white"></i><span class="white m-r-20 m-l-10">tychy@earlystage.slask.pl</span></a>
+						<a href="tel:504749192" target="_blank"><i class="fa fa-phone-square white"></i><span class="white m-l-10">510-111-176</span></a>
+					</div>
+				</div>
+			</div>
+				<!-- end media bar -->
+
+				<!-- start menu bar -->
+				<div class="container-fluid">
+					<div class="row">
+
+						<div class="menu_bar anim" id="menu_scroll" style="font-size:17px;">
+
+							<!-- start menu mobile btn -->
+							<div class="mobile-button anim m-t-10" id="menu_mobile_btn"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></div>
+							<!-- end menu mobile btn -->
+
+							<!-- start img -->
+							<a class="col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-2 col-xs-offset-1 col-xs-11 logo-image" id="logo-desktop" href="#">
+								<img class="logo_logo m-t-20" id="logo_logo" src="img/logo.png"/><img class="logo_img m-t-20" id="logo_img" src="img/okidoki_logo.png"/>
+							</a>
+							<!-- end img -->
+
+							<!-- start buttons MOBILE -->
+								<div class="menu_mobile anim" id="menu-mob">
+
+									<!-- start menu block -->
+									<div class="menu_block_mobile purple anim" onClick="go_to_anchor(1);">
+										Oferta
+									</div>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<a class="menu_block_mobile pink anim" target="_blank" href="http://warsztaty.jakubrajca.pl">
+										Warsztaty
+									</a>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<a class="menu_block_mobile orange anim" href="http://przedszkole.jakubrajca.pl">
+										Przedszkole
+									</a>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<div class="menu_block_mobile yellow anim" style="border-bottom:none;" onClick="go_to_anchor(5);">
+										Kontakt
+									</div>
+									<!-- end menu block -->
+
+								</div>
+							<!-- end buttons MOBILE -->
+
+							<!-- Start buttons DESKTOP -->
+								<div class="col-md-6" id="menu-desktop">
+
+									<!-- start menu block -->
+									<div class="col-md-2 col-sm-1 menu_block purple" onClick="go_to_anchor(1);">
+										Oferta<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</div>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<a class="col-md-2 col-sm-1 menu_block pink" target="_blank" href="http://warsztaty.jakubrajca.pl">
+										Warsztaty<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</a>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<div class="col-md-2 col-sm-1 menu_block green" onClick="go_to_anchor(2);">
+										O nas<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</div>
+									<!-- end menu block -->
+
+
+									<!-- start menu block -->
+									<a class="col-md-2 col-sm-1 menu_block orange" target="_blank" href="https://www.facebook.com/pg/okidokitychy/photos/?ref=page_internal">
+										Galeria<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</a>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<div class="col-md-2 col-sm-1 menu_block yellow" onClick="go_to_anchor(5);">
+										Kontakt<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</div>
+									<!-- end menu block -->
+
+									<!-- start menu block -->
+									<a class="col-md-2 col-sm-1 menu_block blue" target="_blank" href="http://przedszkole.jakubrajca.pl">
+										Przedszkole<br>
+										<div class="dots anim"><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle m-r-5"></i><i class="fa fa-circle"></i></div>
+									</a>
+									<!-- end menu block -->
+
+								</div>
+							<!-- end buttons DESKTOP -->
+
+						</div>
+						<!-- end menu bar -->
+					</div>
+				</div>
+			<!-- menu end -->
+
+	<script>
+		  $( document ).ready(function() {
+            });
+			function go_to_anchor(anchor_no){
+				$('body,html').animate({scrollTop: ( $('#anh_'+anchor_no).offset().top -70)}, 1000);
+				console.log(go_to_anchor);
+			}
+	</script>
+
+	<!-- ----------------------------------------------------------- -->
+
+
+	<!-- slider start -->
+	<div class='slider_news hidden-sm hidden-xs'>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000">
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner wiktor_carousel_inner" role="listbox">
+
+			<!-- start pierwszy slide -->
+			<div class="slider_item item active" style="background-image:url('img/1.jpg'); ">
+
+			  <div class="slider_img box-shadow" id="s_img_1"></div>
+				<div class="news-block_4 anim box-shadow m-l-30" id="s_img_1_button" onClick="go_to_anchor(5);">
+						Zapisz się!
+				</div>
+			</div>
+			<!-- end pierwszy slide -->
+
+
+
+			<!-- start drugi slide -->
+			<div class="item slider_item" style="background-image:url('img/2.jpg');">
+
+					<div class="news-block m-r-50 box-shadow">
+						<div class="pink">Serdecznie zapraszamy dzieci</div> na warsztaty wielkanocne, połączone z wycieczką do Wrocławia.
+					</div>
+
+					<div class="news-block_2 box-shadow">
+					 	Drodzy rodzice,<br>w Wielki Czwartek oraz Wielki Piątek zapraszamy dzieci w wieku 6-12 lat na warsztaty wielkanocne połączone z wycieczką do Wrocławia. W programie wiele ciekawych	atrakcji.
+				 	</div>
+						<div class="clearfix"></div>
+					 <div class="news-block_3 box-shadow m-t-50">
+						 Cena (250zł) obejmuje opiekę wykwalifikowanej kadry w godzinach 7:30-16:30, obiad, transport na wycieczkę, ubezpieczenie, bilety wstępu, opiekę przewodnika.<br>29.03.18 Wielki Czwartek Warsztaty Wielkanocne<br>30.03.18 Wielki Piątek Wycieczka do Wrocławia
+					</div>
+
+					<div class="news-block_4 anim box-shadow m-l-30" id="s_img_2_button" onClick="go_to_anchor(5);">
+							Zapisz się!
+				 	</div>
+			</div>
+			<!-- end drugi slide -->
+
+
+			<!-- start trzeci slide -->
+			<div class="item slider_item" style="background-image:url('img/3.jpg');">
+
+			  <div class="carousel-caption">
+				...
+			  </div>
+			</div>
+			<!-- end trzeci slide -->
+
+		  </div>
+
+		  <!-- Controls -->
+
+			<a id="button_left" class="slide_button left carousel-control" style="left:25px; opacity:1;" href="#carousel-example-generic" role="button" data-slide="prev"><i class="fa fa-arrow-left" style="margin-top:17px;"></i></a>
+
+			<a id="button_right" class="slide_button right carousel-control" style="right:25px; opacity:1;" href="#carousel-example-generic" role="button" data-slide="next"><i class="fa fa-arrow-right" style="margin-top:17px;"></i></a>
+
+		</div>
+	</div>
+	<!-- slider end -->
+
+
+	<!-- ----------------------------------------------------------- -->
+
+
+	<!-- offer start -->
+
+		<div class="container-fluid" id="anh_1">
+			<!-- start offer title -->
+
+			<!-- end offer title -->
+
+				<!-- start offer box -->
+				<div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 offer_box_square anim" id="off_b_1">
+
+						<img src="img/offer_img_1.jpg" class="m-b-10 offer_img" alt="">
+
+						 <div class="offer_title m-b-5 blue">
+						 	Język angielski
+						</div>
+						<div class="title_stripe m-b-20"></div>
+						<div class="offer_content p-l-10 p-r-10 m-b-20">Prowadzimy zajęcia języka angielskiego dla dzieci i młodzieży w wieku 3 do 19 lat. Uczymy poprzez muzykę, taniec, teatr oraz projekty plastyczne. Dzięki naszym metodom nauczania łatwo zrozumieć i przyswoić wiedzę.</div>
+						<div class="off_foot">
+							<a class="offer_button anim" style="background-color: #10b6fe;" target="_blank" href="https://www.earlystage.pl/">
+								<span class="button_txt p-t-10 anim">Zapraszamy</span>
+							</a>
+						</div>
+				</div>
+				<!-- end offer box -->
+
+				<!-- start offer box -->
+				<div class="col-md-4 col-sm-5 col-xs-10 col-xs-offset-1 col-md-offset-0 col-sm-offset-0 offer_box_square anim" id="off_b_2">
+
+						<img src="img/offer_img_2.jpg" class="m-b-10 offer_img" alt="">
+
+						 <div class="offer_title m-b-5 green">
+							Warsztaty i czas wolny
+						</div>
+						<div class="title_stripe m-b-20"></div>
+						<div class="offer_content p-l-10 p-r-10 m-b-20">Dla każdego coś kreatywnego.Proponujemy zajęcia rozwijające zdolności oraz twórcze myślenie.Zapraszamy na Robotykę(-spotkania z klockami lego educator) i naukę szycia na maszynie.</div>
+						<div class="off_foot">
+
+							<!-- Desktop button -->
+							<div class="offer_button anim hidden-xs" style="background-color: #88d914;" onClick="go_to_anchor(7);">
+								<div class="button_txt p-t-10 anim">Zobacz</div>
+							</div>
+
+							<!-- Mobile button -->
+							<a class="offer_button anim hidden-sm hidden-md hidden-lg" style="background-color: #88d914;" target="_blank" href="http://warsztaty.jakubrajca.pl">
+								<div class="button_txt p-t-10 anim">Zobacz</div>
+							</a>
+						</div>
+				</div>
+				<!-- end offer box -->
+
+				<!-- start offer box -->
+				<div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 offer_box_square anim" id="off_b_3">
+
+						<img src="img/offer_img_3.jpg" class="m-b-10 offer_img" alt="">
+
+						 <div class="offer_title m-b-5 yellow">
+							Przedszkole
+						</div>
+						<div class="title_stripe m-b-20"></div>
+						<div class="offer_content p-l-10 p-r-10 m-b-20">Miło nam poinformować, że od wakacji startuje nowe przedszkole matematyczno – językowe "OKIDOKI" z oddziałem intergacyjnym
+								Siedzibą będzie lokal przy ulicy Borowej 84 w Tychach
+							Naszym celem jest stworzenie przedszkola, w którym dzieci będą czuły się jak w domu.</div>
+						<div class="off_foot">
+							<a class="offer_button anim" style="background-color: #ffd338;" target="_blank" href="http://przedszkole.jakubrajca.pl">
+								<span class="button_txt p-t-10 anim">Zapraszamy</span>
+							</a>
+						</div>
+				</div>
+				<!-- end offer box -->
+
+				<!-- start offer box -->
+				<div class="col-md-4 col-sm-5 col-xs-10 col-xs-offset-1 col-md-offset-0 col-sm-offset-0 offer_box_square anim" id="off_b_4">
+
+						<img src="img/wycieczki.png" class="m-b-10 offer_img" alt="">
+
+						 <div class="offer_title m-b-5 orange">
+							Biuro wycieczek szkolnych
+						</div>
+						<div class="title_stripe m-b-20"></div>
+						<div class="offer_content p-l-10 p-r-10 m-b-20">Dzieci cieszą się z wolnego czasu od szkoły, jednak rodzice muszą sprostać zadaniu organizacji tego czasu i tu z pomocą przychodzi OKIDOKI. Pomożemy zaplanować czas wolny Twojego dziecka.<br> Organizujemy półkolonie.</div>
+						<div class="off_foot">
+							<a class="offer_button anim" style="background-color: #ff5722;" target="_blank" href="http://warsztaty.jakubrajca.pl#anh_5">
+								<span class="button_txt p-t-10 anim">Zobacz</span>
+							</a>
+						</div>
+				</div>
+				<!-- end offer box -->
+		</div>
+
+	<!-- offer end -->
+
+
+	<!-- ---------------------------------------------------------- -->
+
+
+	<!-- about start -->
+	<div class="container-fluid hidden-xs hidden-sm" id="anh_2">
+		<div class="about_us p-t-30">
+
+			<div class="about_box">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+							<!-- start box in -->
+							<div class="item_cont">
+								<!-- <div class="about_title green"><b>O nas</b></div> -->
+								<div class='about_content p-t-20 text_shadow_white'>OkiDoki to centrum nauki i zabawy dla dzieci i młodzieży, w którym spędzą czas rozwijając swoje talenty. Nasi uczniowie mogą zadziwić się światem i odkrywać radość nauki.</div>
+							</div>
+							<!-- end box in -->
+				    </div>
+
+						<div class="item">
+						 <!-- start box in -->
+						 <div class="item_cont">
+
+							 <div class='about_content p-t-20 text_shadow_white'>Prowadzimy szkołę Języka Angielskiego Early Stage, uczymy jak przeżyć przygodę z matematyką, rozwijamy kreatywność młodych ludzi, a podczas wycieczek poszerzamy ich wiedzę o świecie.</div>
+						 </div>
+						 <!-- end box in -->
+					 </div>
+
+
+				  </div>
+
+				  <!-- Left and right controls -->
+
+
+
+				  <a class="slide_button left carousel-control" href="#myCarousel" data-slide="prev">
+				    <i class="fa fa-arrow-left" style="margin-top:50px; margin-left:20px;"></i>
+				  </a>
+				  <a class="slide_button right carousel-control" href="#myCarousel" data-slide="next">
+				    <i class="fa fa-arrow-right" style="margin-top:50px; margin-right:20px;"></i>
+				  </a>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- about end -->
+
+
+	<!-- ---------------------------------------------------------- -->
+
+
+	<!-- warsztaty start -->
+	<div class="warsztaty container-fluid hidden-xs hidden-sm" id="anh_7">
+
+		<!-- start column 1 -->
+		<div class="col-md-4 col-md-offset-2" style="padding:0px !important;">
+
+			<div class="col-md-12 kwadrat-big box_shadow" style="padding:0px !important;">
+				<div class="kwadrat-in" style="background-image:url('img/matematyka.jpg') !important;">
+					<div class="kwadrat-opis anim_long">
+						<div class="kwadrat-napisy">
+							<b><h3>Matematyka</h3></b>Jesteś pasjonatem matematycznych zagadek i zależno!sci? A może jednak chciałyś rozwijać w tym kierunku? - proponujemy ciekawe zajęcia w bardzo przyjaznym klimacie.<br><br><br>Matematyka jest twoją zmorą? Nic nie szkodzi, mamy na to receptę - przyjdź, a przekonasz się jak przyjazna może być matematyka w naszym wydaniu.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 col-sm-12 kwadrat-medium box_shadow" style="padding:0px !important;">
+				<div class="kwadrat-in" style="background-image:url('img/robotyka.jpg') !important;">
+					<div class="kwadrat-opis anim_long">
+						<div class="kwadrat-napisy">
+							<b><h3>Robotyka</h3></b>Robotyka z Lego Education – to nie tylko klocki! Proponowane zajęcia skierowane są do najmłodszych architektów. </div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end column 1 -->
+
+		<div class="col-md-4 kwadrat-medium box_shadow" style="padding:0px !important;">
+			<div class="kwadrat-in" style="background-image:url('img/offer_img_1.jpg') !important;">
+				<div class="kwadrat-opis anim_long">
+					<div class="kwadrat-napisy">
+						<b><h3>Angielski</h3></b>Nasza szkoła dla ciebie - Ty dla nas<br> by lepiej poznać świat, by móc podziękować i porozumieć się ze spotkanymi ludźmi.<br>Zapraszamy na angielski.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 kwadrat-big box_shadow" style="padding:0px !important;">
+			<div class="kwadrat-in" style="background-image:url('img/szycie.jpg') !important;">
+				<div class="kwadrat-opis anim_long">
+					<div class="kwadrat-napisy">
+						<b><h3>Szycie</h3></b>Dla każdego coś dobrego - uszyj dla siebie i dla kogoś zapraszamy na kreatywne i rozwijające warsztaty z szycia na maszynie.<br><br>Propozycja skierowana jest do wszystkich , którzy nie boją się nowych wyzwań – nauczymy się jak szyć na maszynie i nie zwariować!<br><br>Podczas naszych warsztatów – dziecko zdobędzie niezbędną wiedzę do samodzielnego szycia. Nie ma bowiem nic cenniejszego od dobrze przekazanej wiedzy, na podstawie której możemy samodzielnie w dalszej „szyciowej drodze” uczyć się coraz to nowych umiejętności.</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- warsztaty end -->
+
+
+
+
+	<!-- ----------------------------------------------------------- -->
+
+
+	<!-- paralax start -->
+	<div	 class="paralax purple p-t-50 hidden-xs hidden-sm" id="anh_4">
+		<div class="box_liczby">
+
+			<!-- START BALL ROW -->
+			<div class="container_balls p-t-40 auto_margin" id="counter">
+					<!-- ball html -->
+				<div class="ball box_shadow" style="background-color:rgba(255, 87, 34,0.7);">
+					<div class="skill_ball">
+						<span class="counter-value" data-count="150">0</span><div class="ball_text">Dzieci odwiedzających nas w każde<br> wakacje</div>
+					</div>
+				</div>
+
+					<!-- ball css -->
+				<div class="ball box_shadow" style="background-color:rgba(255, 211, 56,0.7); left:37% !important;">
+					<div class="skill_ball">
+						<span class="counter-value" data-count="327">0</span><div class="ball_text">Uczniów szkoły<br> języka angielskiego<br> EarlyStage</div>
+					</div>
+				</div>
+
+					<!-- ball bootstrap -->
+				<div class="ball box_shadow" style="background-color:rgba(136, 217, 20,0.7); right:0%; !important">
+					<div class="skill_ball">
+						<span class="counter-value" data-count="63">0</span><div class="ball_text">Zorganizowanych turnusów<br> półkolonijnych</div>
+					</div>
+				</div>
+			</div>
+			<!-- END BALL ROW -->
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<!-- START BALL ROW -->
+			<div class="container_balls auto_margin" >
+
+					<!-- ball -->
+				<div class="ball box_shadow" style="background-color:rgba(233, 30, 99,0.7); left:19% !important">
+					<div class="skill_ball">
+						<span class="counter-value" data-count="7">0</span><div class="ball_text">Lat szkoły<br> EarlyStage<br> w Tychach</div>
+					</div>
+				</div>
+
+					<!-- ball -->
+				<div class="ball box_shadow" style="background-color:rgba(16, 182, 254,0.7); right:19%; !important">
+					<div class="skill_ball">
+						<span class="counter-value" data-count="16">0</span><div class="ball_text">Lat doświadczenia<br>w uczeniu<br>matematyki</div>
+					</div>
+				</div>
+			</div>
+			<!-- END BALL ROW -->
+		</div>
+	</div>
+	<!-- paralax end -->
+
+
+	<!-- ----------------------------------------------------------- -->
+
+
+	<!-- footer start -->
+	<div class="footer">
+
+		<div class="container-fluid">
+			<div class="form_footer" id="anh_5">
+				<div class="form_info col-md-4 col-sm-12 col-xs-12 col-md-offset-2">
+					<h3 class="yellow m-b-50" style="text-align:center;">Nasz adres</h3>
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-sx-6 m-b-30 form_info_title"><i class="fa fa-map-marker m-r-10 purple" style="font-size:20px;"></i>Adres</div>
+						<div class="col-md-6 col-sm-6 col-sx-6 m-b-30 form_info_title"><i class="fa fa-envelope m-r-10 purple" style="font-size:20px;"></i>Email</div>
+						<div class="col-md-6 col-sm-6 col-sx-6 form_info_content">Husarii Polskiej 28a<br>43-100, Tychy</div>
+						<div class="col-md-6 col-sm-6 col-sx-6 form_info_content">tychy@earlystage.slask.pl</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 m-t-40 m-b-30 form_info_title"><i class="fa fa-envelope m-r-10 purple" style="font-size:20px;"></i>Godziny pracy biura</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 form_info_content">Poniedziałek 10.00 -19.00<br>Wtorek 12.00 -19.00<br>Środa 10.00 -19.00<br>Czwartek 10.00 -19.00<br>Piątek 10.00 -18.00</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="form_contact col-md-5">
+					<h3 class="m-b-40 m-t-20 p-l-30 green" style="display:block; text-align:left;">Skontaktuj się z nami</h3>
+					<h5 class="m-b-50 m-t-20 p-l-30" style="display:block; text-align:left;"></h5>
+
+					<!-- start form -->
+					<div class="form_box">
+
+						<input class="input_dignity anim" style="float:left;" id="c_name" placeholder="imię i nazwisko">
+						<div class="error err_c_name"></div>
+
+						<input class="input_dignity anim" style="float:right;" id="c_email" placeholder="e-mail">
+						<div class="error err_c_email"></div>
+
+						<input class="input_topic anim" id="c_topic" placeholder="temat">
+						<div class="error err_c_topic"></div>
+
+						<textarea class="input_content anim" id="c_text" placeholder="treść"></textarea>
+						<div class="error err_c_text"></div>
+
+						<div class="send_button anim">Wyślij email</div>
+
+					</div>
+					<div class="form_box_sended">Dziękujemy za wysłanie wiadomości</div>
+					<!-- end form -->
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- start map -->
+		<div class="map_footer container-fluid">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.1996308462153!2d18.969418816017388!3d50.119986279431146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716c81f84d261bf%3A0x68c140e4afcad295!2sCentrum+Nauki+i+Zabawy+okiDoki!5e0!3m2!1spl!2spl!4v1502288214729" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<!-- end map -->
+
+		<!-- start media -->
+		<div class="media_footer p-t-30 b-t-30">
+			<img class="logo_img m-b-20" src="img/okidoki_logo.png"/>
+			<div class="media_title m-b-10">Centrum nauki i zabawy</div>
+			<div class="media_content p-t-10">
+				<a class="media_square anim m-r-20" href="https://www.facebook.com/okidokitychy/" style="padding-top:9px;" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook media_txt"></i></a>
+				<a class="media_square anim" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram media_txt"></i></a>
+			</div>
+		</div>
+
+		<!-- end media -->
+
+		<!-- colorfull strip -->
+		<div class="container-fluid">
+			<div style="height:5px">
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#88d914; height:100%;"></div>
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#ffd338; height:100%;"></div>
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#e91e63; height:100%;"></div>
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#624dd6; height:100%;"></div>
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#ff5722; height:100%;"></div>
+				<div class="col-md-2 col-sm-2 col-xs-2" style="background-color:#10b6fe; height:100%;"></div>
+			</div>
+	</div>
+		<!-- colorfull strip -->
+
+		<!-- start info -->
+
+		<div class="info_footer container-fluid">
+			<div class="">
+
+				<!-- start instagram -->
+				<div class="col-md-4"> <!--col-md-offset -->
+					<!-- <h3 class="purple">Instagram</h3>
+					<div class="title_stripe m-b-20"></div>
+
+					<div class="img_box_foot m-b-10">
+						<a href="" target="_blank" class="footer_instagram_img"></a>
+						<a href="" target="_blank" class="footer_instagram_img" style="width:34% !important;"></a>
+						<a href="" target="_blank" class="footer_instagram_img"></a>
+					</div>
+
+					<div class="img_box_foot">
+						<a href="" target="_blank" class="footer_instagram_img"></a>
+						<a href="" target="_blank" class="footer_instagram_img" style="width:34% !important;"></a>
+						<a href="" target="_blank" class="footer_instagram_img"></a>
+					</div> -->
+
+				</div>
+				<!-- end instagram -->
+
+				<!-- start contact  -->
+				<div class="col-md-4 contact_footer m-b-50" id="anh_6">
+					<h3 class="green" style="text-align:center !important;">Kontakt</h3>
+					<div class="title_stripe m-b-40"></div>
+					<i class="fa fa-phone m-r-10 m-l-50 m-b-10 purple"></i><span>510-111-176</span><br>
+					<i class="fa fa-phone m-r-10 m-l-50 m-b-10 purple"></i><span>516-346-789</span><br>
+					<i class="fa fa-envelope m-r-10 m-l-50 m-b-10 purple"></i><span>tychy@earlystage.slask.pl</span><br>
+					<i class="fa fa-map-marker m-r-10 m-l-50 purple"></i><span>Tychy, Husarii Polskiej 28a</span>
+				</div>
+				<!-- end contact -->
+
+			</div>
+		</div>
+		<!-- end info -->
+
+	</div>
+	<!-- footer end -->
+
+
+
+	</body>
+</html>
